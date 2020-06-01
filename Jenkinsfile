@@ -3,7 +3,8 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-			 bat 'vagrant up'
+			bat 'whoami'
+			bat 'vagrant up'
 			}
 		}
 		stage('Test') {
