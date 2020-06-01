@@ -10,7 +10,7 @@ pipeline {
 			steps {
 				echo 'TEST'
 				bat 'vagrant halt'
-				bat 'vagrant package --base bionic64_default_1590938320383_21694'
+				bat 'vagrant package --base API-Vagrant'
 			}
 		}
 		stage('Push registry') {
