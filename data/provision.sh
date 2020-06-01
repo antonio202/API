@@ -7,7 +7,7 @@ sudo apt-get install -y wget
 sudo apt-get install -y zip
 mkdir /api
 cd /api
-sudo wget -P /api https://github.com/FaztWeb/login-node/archive/master.zip
-sudo unzip master.zip
+sudo wget -P /api https://github.com/antonio202/login-node/archive/master.zip
+sudo unzip login-node-master.zip
 cd login-node-master
 sudo npm i express express-session cookie-parser connect-flash ejs bcrypt-nodejs body-parser mongoose morgan passport passport-local
