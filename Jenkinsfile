@@ -15,7 +15,7 @@ pipeline {
 		}
 		stage('Push registry') {
 			steps {
-				withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'vagrantCloudToken', usernameVariable: 'vagrantCloudUser')]) {
+				withCredentials([usernamePassword(credentialsId: 'GitHub', passwordVariable: 'vagrantCloudToken', usernameVariable: 'vagrantCloudUser')]) {
 				bat 'vagrant cloud auth login -u $vagrantCloudHubUser -t $vagrantCloudToken'
 				bat 'vagrant cloud publish antjos/api 1 antjos package.box'
 				}
