@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-			 sh 'vagrant up'
+			 sh 'vagrant box list'
 			}
 		}
 		stage('Test') {
