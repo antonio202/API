@@ -21,4 +21,4 @@ echo "fi">/script.sh
 pdw
 cat /script.sh
 cd /
-sudo ./script.sh
+sudo sh /script.sh
