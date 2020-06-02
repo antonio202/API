@@ -5,6 +5,7 @@ sudo apt-get install -y mongodb
 sudo apt-get install -y npm
 sudo apt-get install -y wget
 sudo apt-get install -y zip
+sudo apt-get install -y dos2unix
 mkdir /api
 cd /api
 sudo wget -P /api https://github.com/antonio202/login-node/archive/master.zip
