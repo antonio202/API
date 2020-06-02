@@ -12,13 +12,13 @@ sudo wget -P /api https://github.com/antonio202/login-node/archive/master.zip
 sudo unzip master.zip
 cd login-node-master
 sudo npm i express express-session cookie-parser connect-flash ejs bcrypt-nodejs body-parser mongoose morgan passport passport-local
-echo "if [ -e /test.sh ]">>/script.sh
-echo "then">/script.sh
-echo "node /api/login-node-master/src/server.js">/script.sh
-echo "else">/script.sh
-echo "touch /test.sh">/script.sh
-echo "fi">/script.sh
+sudo echo "if [ -e /test.sh ]">>/script.sh
+sudo echo "then">/script.sh
+sudo echo "node /api/login-node-master/src/server.js">/script.sh
+sudo echo "else">/script.sh
+sudo echo "touch /test.sh">/script.sh
+sudo echo "fi">/script.sh
 pdw
-cat /script.sh
+sudo cat /script.sh
 cd /
 sudo sh /script.sh
