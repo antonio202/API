@@ -19,4 +19,5 @@ echo "else">/script.sh
 echo "touch /test.sh">/script.sh
 echo "fi">/script.sh
 cat /script.sh
+cd /
 ./script.sh
