@@ -15,7 +15,7 @@ pipeline {
 		}
 		stage('Initiate') {
 			steps {
-				bat 'cd'
+				bat 'vagrant up'
 				bat 'vagrant provision'
 			}	
 		}
