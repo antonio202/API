@@ -14,13 +14,12 @@ cd login-node-master
 sudo npm i express express-session cookie-parser connect-flash ejs bcrypt-nodejs body-parser mongoose morgan passport passport-local
 sudo touch /script.sh
 sudo chmod 777 /script.sh
-sudo echo "if [ -e /test.sh ]">/script.sh
-sudo echo "then">/script.sh
-sudo echo "node /api/login-node-master/src/server.js">/script.sh
-sudo echo "else">/script.sh
-sudo echo "touch /test.sh">/script.sh
-sudo echo "fi">/script.sh
-pdw
+sudo echo "if [ -e /test.sh ]">>/script.sh
+sudo echo "then">>/script.sh
+sudo echo "node /api/login-node-master/src/server.js">>/script.sh
+sudo echo "else">>/script.sh
+sudo echo "touch /test.sh">>/script.sh
+sudo echo "fi">>/script.sh
 sudo cat /script.sh
 cd /
 sudo sh /script.sh
