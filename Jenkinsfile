@@ -4,6 +4,7 @@ pipeline {
 		stage('Build') {
 			steps {
 			bat 'whoami'
+			bat 'cd C:\Program Files (x86)\Jenkins\workspace'
 			bat 'vagrant up'
 			}
 		}
@@ -11,7 +12,6 @@ pipeline {
 			steps {
 				echo 'TEST'
 				bat 'vagrant halt'
-				bat 'cd'
 				bat 'vagrant package --base API-Vagrant'
 			}
 		}
