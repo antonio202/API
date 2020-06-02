@@ -22,10 +22,6 @@ pipeline {
 				}
 			}
 		}
-		stage('Initiate') {
-			steps {
-				bat 'vagrant up'
-			}
-		}
+		
 	}
 }
