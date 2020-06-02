@@ -11,6 +11,7 @@ pipeline {
 			steps {
 				echo 'TEST'
 				bat 'vagrant halt'
+				bat 'cd'
 				bat 'vagrant package --base API-Vagrant'
 			}
 		}
