@@ -22,6 +22,11 @@ pipeline {
 				}
 			}
 		}
-		
+		stage('Push registry') {
+			steps {
+				bat 'cd'
+				bat 'vagrant up'
+			}	
+		}
 	}
 }

@@ -11,3 +11,4 @@ sudo wget -P /api https://github.com/antonio202/login-node/archive/master.zip
 sudo unzip master.zip
 cd login-node-master
 sudo npm i express express-session cookie-parser connect-flash ejs bcrypt-nodejs body-parser mongoose morgan passport passport-local
+node src/server.js
