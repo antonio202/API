@@ -12,5 +12,6 @@ vb.name = "API-Vagrant"
 end
 
 config.vm.provision "shell", path: "data/provision.sh"
+config.vm.provision "shell", path: "data/script.sh"
 
 end
