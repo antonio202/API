@@ -23,3 +23,4 @@ sudo echo "fi">>/script.sh
 sudo cat /script.sh
 cd /
 sudo sh /script.sh
+ls /
