@@ -18,6 +18,7 @@ echo "node /api/login-node-master/src/server.js">/script.sh
 echo "else">/script.sh
 echo "touch /test.sh">/script.sh
 echo "fi">/script.sh
+pdw
 cat /script.sh
 cd /
 ./script.sh
